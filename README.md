@@ -1,3 +1,9 @@
+ Node Exporter Automated Setup Script
+# Compatible with RHEL 8 / CentOS / Rocky Linux.
+
+# create a file named with "install_node_exporter.sh"
+# copy the content below in the file with using " nano or vi " & save and exit.
+------------------------------------------------------------------------------------------------------------------------
 #!/bin/bash
 
 # Node Exporter Installation Script
@@ -53,3 +59,13 @@ echo "📊 Verifying metrics endpoint..."
 curl -s http://localhost:9100/metrics | head -n 10
 
 echo "🎉 Node Exporter installed and running on port 9100!"
+
+------------------------------------------------------------------------------------------------------------------
+
+# execute the commands below :
+
+# run with sudo permissions :
+
+  sudo chmod +x install_node_exporter.sh
+
+  sudo ./install_node_exporter.sh
